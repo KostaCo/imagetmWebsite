@@ -1,0 +1,52 @@
+/*****************************/
+/* Copyright by CreativeDive */
+/*****************************/
+
+/* IMAGE HOVER */
+
+.image-hover * {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+
+.image-hover 
+{
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	background: rgba(255,255,255,1.00);
+	border: 10px solid #FFFFFF;	
+}
+
+.image-hover img {display:block}
+.image-hover a {text-decoration:none}
+
+.image-pos {width:450px;height:200px}
+.image-pos img {margin:-100px 0px 0px -100px}
+
+
+/*** effect - image roll ***/
+
+.img-roll {background:rgba(255,255,255,1.00)}
+.img-roll img {position:absolute;top:0px;right:0px;bottom:0px;left:0px}
+
+.img-roll .img-1 {left:0px}
+.img-roll .img-2 {left:123%}
+.img-roll:hover .img-1 {left:123%}
+.img-roll:hover .img-2 {left:0px}
+
+.img-roll img
+{
+transition:all .6s ease-in-out;
+-webkit-transition:all .6s ease-in-out;
+-moz-transition:all .6s ease-in-out;
+-ms-transition:all .6s ease-in-out;
+-o-transition:all .6s ease-in-out;
+}
+
+.img-roll:hover img
+{
+transition:all 1.2s ease-in-out;
+-webkit-transition:all 1.2s ease-in-out;
+-moz-transition:all 1.2s ease-in-out;
+-ms-transition:all 1.2s ease-in-out;
+-o-transition:all 1.2s ease-in-out;
+}
+
